@@ -168,9 +168,9 @@ set up an upstream remote.
 
 ```bash
 
-git init --bare                             # set up bare repo
-git push --set-upstream <remote> <branch>   # set upstream branch
-git push <remote> <branch>                  # push changes up to a remote
+git init --bare                                     # set up bare repo
+git push [-u | --set-upstream] <remote> <branch>    # set upstream branch
+git push <remote> <branch>                          # push changes up to a remote
 
 ```
 
