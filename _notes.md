@@ -40,22 +40,20 @@ Convention for commit messages (when using the editor). Summarize the commit on 
 > - Update the sayHello() function to output the user's name
 > - Change the sayGoodbye() function to a friendlier message
 
-
 ## branches (using br shortcut)
 
 ```bash
 
 git br                          # list all available branches
 git br <branch>                 # create new branch, does not co the branch
-git br -m <newname>             # rename current branch 
+git br -m <newname>             # rename current branch
 git br -m <oldname> <newname>   # rename any branch
 git br -d <branch>              # safe delete specified branch but not if there are unmerged changes
-git br -D <branch>              # force delete 
+git br -D <branch>              # force delete
 git br -a                       # list all remote branches
 git co -b <branch>              # create new branch and check it out
 
 ```
-
 
 ## Stashing
 
@@ -118,7 +116,6 @@ git log --oneline   # Easy way to see all commits inc hash
 git log -n <n>      # Show previous n commits
 
 ```
-
 
 ## checkout
 
@@ -194,11 +191,21 @@ git gc          # cleanup unnecessary files and optimise local repo
 
 ```
 
+## Tagging
+
+```bash
+git tag <tagname>                       # lightweight tag (convention - private)
+git git tag -a v1.4                     # annotated tag, contains metadata (convention - public)
+git tag -a v1.4 -m "my version 1.4"     # with message
+
+git tag     # list stored tags
+```
 
 ## Articles
 
 Some articles that might save your bacon.
 
-[Git Catastrophes and Tips to Avoid Them](https://blog.risingstack.com/git-catastrophes-and-tips-to-avoid-them/) - contains a save if you commit to the wrong branch. I think VS uses something like this. 
+[Git Catastrophes and Tips to Avoid Them](https://blog.risingstack.com/git-catastrophes-and-tips-to-avoid-them/) - contains a save if you commit to the wrong branch. I think VS uses something like this.
 
 [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY) Not watched yet.
+
