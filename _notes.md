@@ -229,4 +229,3 @@ Some articles that might save your bacon.
 [Git Catastrophes and Tips to Avoid Them](https://blog.risingstack.com/git-catastrophes-and-tips-to-avoid-them/) - contains a save if you commit to the wrong branch. I think VS uses something like this.
 
 [Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY) Not watched yet.
-
