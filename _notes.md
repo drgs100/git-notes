@@ -1,5 +1,7 @@
 # Git notes
 
+Some new text here.
+
 ## config
 
 ```git config --global --edit```
