@@ -21,7 +21,23 @@ git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.br branch
+git config --global alias.fh fetch
 
+```
+
+There are three different config files
+
+```bash
+git config --global
+git config --system
+git config --local
+```
+
+Find your configs
+
+```bash
+git config --list --show-origin     # shows where all your setting live
+git config --[local/global] -e      # edit a config file in system editor
 ```
 
 ## add and commit
@@ -63,6 +79,11 @@ Stashing does not get pushed.
 
 git stash pop       # reapply previously stashed changes
 git stash apply     # reapplies changes and keeps in stash
+git stash show      # show the changes between stashes
+git stash pop       # reapply previously stashed changes
+git stash apply     # reapplies changes and keeps in stash
+git stash drop      # remove a single stash
+git stash clear     # remove all stashes
 
 ```
 
@@ -195,7 +216,7 @@ git gc          # cleanup unnecessary files and optimise local repo
 
 ```bash
 git tag <tagname>                       # lightweight tag (convention - private)
-git git tag -a v1.4                     # annotated tag, contains metadata (convention - public)
+git tag -a v1.4                         # annotated tag, contains metadata (convention - public)
 git tag -a v1.4 -m "my version 1.4"     # with message
 
 git tag     # list stored tags
