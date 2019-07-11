@@ -2,6 +2,8 @@
 
 Some new text here.
 
+And some more.
+
 ## config
 
 ```git config --global --edit```
