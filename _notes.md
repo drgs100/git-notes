@@ -164,23 +164,25 @@ git clone <url>   # clone a remote repo, automatically creates a connection call
 Clone - I don't quite have the hang of this yet. Currently instead of cloning I am using ```remote add``` then ```pull```.
 
 ```bash
-
 git remote                                # list the remote connections to other repos
 git remote -v                             # include urls
 git remote add <name> <url>               # create new connection to remote repo 
 git remote rm <name>                      # remove connection to named remote
 git remote rename <old-name> <new name>   # rename remote
-
 ```
 
-```bash
+### Fetch and Pulling
 
+```bash
 git fetch <remote>            # imports commits from remote repo into 'remote branches', giving a chance to review
 git fetch <remote> <branch>   # fetches a specific branch
 git branch -r                 # show remote branches
-git pull <remote>             # run fetch and merge together
-git pull --rebase <remote>    # using rebase instead
 
+git pull <remote>                                   # run fetch and merge together
+git pull <remote> <branch>                          # Pulls branch to the local branch of the same name
+git pull <remote> <remote_branch>:<local_branch>    # Pull branch to local branch, different name
+
+git pull --rebase <remote>    # using rebase instead? Not tried this use with caution
 ```
 
 ### pushing
@@ -232,6 +234,14 @@ git tag     # list stored tags
 
 ```bash
 git reset --hard origin/<branch_name>  # Use with caution
+```
+
+## merge
+
+Not tested yet but sounds useful.
+
+```bash
+git merge --abort   # If it does what it says it does then this will be useful
 ```
 
 ## Articles
