@@ -226,6 +226,14 @@ git tag -a v1.4 -m "my version 1.4"     # with message
 git tag     # list stored tags
 ```
 
+## reset
+
+*Use with caution*, if your local branch has too many unnecessary commits and you just want to return to the remote then you can hard reset to the origin branch.
+
+```bash
+git reset --hard origin/<branch_name>  # Use with caution
+```
+
 ## Articles
 
 Some articles that might save your bacon.

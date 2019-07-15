@@ -6,11 +6,11 @@ About to start working on a new work item?
 
 1. Pull master branch down from DevOps (origin) `git pull origin master`
 2. Create and checkout a new branch `git checkout -b "new-branch"` (see below for naming)
-3. Get some work done
+3. Get some work done on the new branch
 4. Make a commit `git commit -m "Commit message #234"` (see below for commit message)
 5. Push branch to origin `git push origin new-branch`
 6. Repeat steps 3-5*.
-7. When feature or bug is complete make a pull request in DevOps
+7. When feature or bug is complete push to origin and make a pull request in DevOps
 8. Start all over again with new work item
 
 *It is also worth making regular merges from master
@@ -39,7 +39,11 @@ git commit -m "Example commit message #345"
 
 ## When to commit
 
+TODO
+
 ## When to pull origin master
+
+TODO
 
 ## Articles
 
