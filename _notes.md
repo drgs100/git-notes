@@ -244,6 +244,12 @@ Not tested yet but sounds useful.
 git merge --abort   # If it does what it says it does then this will be useful
 ```
 
+## Update git
+
+```bash
+git update-git-for-windows
+```
+
 ## Articles
 
 Some articles that might save your bacon.
